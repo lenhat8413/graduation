@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graduation Invitation</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="https://unpkg.com/lottie-web@5.12.2/build/player/lottie.min.js"></script>
+    <script defer src="./ambient.js"></script>
+  </head>
+  <body class="landing-page">
+    <div class="map-wash" aria-hidden="true"></div>
+    <div class="arcane-flare" aria-hidden="true"></div>
+    <div class="mist-layers" aria-hidden="true">
+      <span class="mist mist--one"></span>
+      <span class="mist mist--two"></span>
+      <span class="mist mist--three"></span>
+    </div>
+    <div class="sigil-field" aria-hidden="true">
+      <span class="sigil sigil--one"></span>
+      <span class="sigil sigil--two"></span>
+      <span class="sigil sigil--three"></span>
+    </div>
+    <div class="shadow-passage" aria-hidden="true">
+      <span class="shadow-pass shadow-pass--one"></span>
+      <span class="shadow-pass shadow-pass--two"></span>
+    </div>
+    <div class="map-trails" aria-hidden="true">
+      <span class="map-trail map-trail--one"></span>
+      <span class="map-trail map-trail--two"></span>
+      <span class="map-trail map-trail--three"></span>
+    </div>
+    <div class="footprints" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="magic-dust" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="ambient ambient-left"></div>
+    <div class="ambient ambient-right"></div>
+    <div class="wand-corner" aria-hidden="true">
+      <div id="wand-lottie" class="wand-lottie"></div>
+    </div>
+
+    <main class="search-shell">
+      <p class="eyebrow">Graduation Invitation</p>
+      <h1>Who you are?  </h1>
+      <p class="supporting">
+       
+      </p>
+
+      <form id="lookup-form" class="lookup-form">
+        <input
+          id="guest-name"
+          name="name"
+          type="text"
+          placeholder="You are...?"
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Mở thiệp</button>
+      </form>
+
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+    </main>
+
+    <button id="music-toggle" class="music-toggle" type="button" aria-pressed="true">
+      Tat nhac
+    </button>
+    <audio id="bg-music" loop preload="auto">
+      <source src="/uploads/videos/nhacnen.mp3" type="audio/mpeg" />
+    </audio>
+
+    <dialog id="admin-dialog" class="admin-dialog">
+      <form method="dialog" class="admin-dialog__inner" id="admin-login-form">
+        <h2>Admin Login</h2>
+        <input
+          id="admin-username"
+          type="text"
+          name="username"
+          placeholder="Ten dang nhap"
+          autocomplete="username"
+          required
+        />
+        <p>Nhập mật khẩu để truy cập dashboard.</p>
+        <input
+          id="admin-password"
+          type="password"
+          name="password"
+          placeholder="Mật khẩu"
+          required
+        />
+        <div class="admin-actions">
+          <button type="submit" value="cancel" class="ghost-button">Hủy</button>
+          <button type="submit" value="confirm">Đăng nhập</button>
+        </div>
+        <p id="admin-feedback" class="feedback" aria-live="polite"></p>
+      </form>
+    </dialog>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
